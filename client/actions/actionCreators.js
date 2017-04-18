@@ -7,7 +7,7 @@ export function increment(index) {
 }
 
 //add comment
-export function addComment(postId, author) {
+export function addComment(postId, author, comment) {
   return {
     type: 'ADD_COMMENT',
     postId,
@@ -20,7 +20,7 @@ export function addComment(postId, author) {
 export function removeComments(postId, i) {
   return {
     type: 'REMOVE_COMMENT',
-    i
+    i,
     postId
   }
 }
